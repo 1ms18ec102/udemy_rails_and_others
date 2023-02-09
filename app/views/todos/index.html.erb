@@ -1,0 +1,9 @@
+ <%= @todos.each do |i| %>
+  <ul>
+  <li>Name: <%= i.name%></li>
+  <li>description: <%= i.description%> </li>
+  <li><%= link_to "edit", edit_todo_path(i) %> |
+          <%= link_to "Show", todo_path(i) %> |
+         <%= link_to "delete", todo_path(i), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %></li>
+  </ul> 
+  <% end %>

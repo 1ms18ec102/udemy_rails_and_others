@@ -1,0 +1,12 @@
+<h1>new</h1>
+<% if @todo.errors.any? %>
+<%= @todo.error.full_message.each do |msg| %>
+<ul>
+<li><%=msg%></li>
+</ul>
+<% end%>
+<% end%>
+
+
+
+<%= render 'todos/form' %>

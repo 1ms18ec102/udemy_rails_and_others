@@ -1,0 +1,9 @@
+<h1>the task is </h1>
+
+
+<p>Name: <%= @todo.name%></p>
+<p>description: <%= @todo.description%></p>
+<%= link_to "edit", edit_todo_path(@todo) %>|
+<%= link_to "add new", new_todo_path(@todo) %>|
+<%= link_to "all todo", todos_path %>| 
+<%= link_to "delete", todo_path(@todo), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>

@@ -1,0 +1,9 @@
+<%= form_for @todo do |f| %>
+<p><%= f.label :name %><br>
+<%= f.text_field :name %></p>
+<br>
+<p><%= f.label :descripation %><br>
+<%= f.text_field :description %></p>
+<br>
+<%= f.submit %>
+<% end %>
